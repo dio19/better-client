@@ -132,7 +132,6 @@ const FormPost = () => {
           )}
         </Formik>
       </Box>
-      {/* <div className="form-post__button">Add Customer</div> */}
     </div>
   );
 };

@@ -9,6 +9,7 @@ const CustomTextField = ({
   onChange,
   error,
   helperText,
+  disabled,
 }: ITextfield) => {
   return (
     <TextField
@@ -19,6 +20,7 @@ const CustomTextField = ({
       error={error}
       helperText={helperText}
       color="warning"
+      disabled={disabled}
       required
       focused
     />

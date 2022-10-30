@@ -25,15 +25,6 @@ interface HeadCell {
   label: string;
   disableSorting: boolean;
 }
-
-interface MouseEventTarget extends EventTarget {
-  id: string;
-}
-
-interface MouseEventButton extends React.MouseEvent<HTMLButtonElement> {
-  target: MouseEventTarget;
-}
-
 interface ITextfield {
   id: string;
   label: string;
@@ -43,6 +34,21 @@ interface ITextfield {
   ) => void;
   error: boolean;
   helperText: string;
+  disabled?: boolean;
+}
+
+type CustomerContextType = {
+  DataContext: Array<DataCustomer>;
+  setDataContext: (value: Array<DataCustomer>) => void;
+};
+
+interface MouseEventTarget extends EventTarget {
+  value: any;
+  id: string;
+}
+
+interface MouseEvent extends React.ChangeEventHandler<HTMLInputElement> {
+  target: MouseEventTarget;
 }
 
 export type {
@@ -51,6 +57,7 @@ export type {
   Customers,
   DataCustomer,
   HeadCell,
-  MouseEventButton,
   ITextfield,
+  CustomerContextType,
+  MouseEvent,
 };
