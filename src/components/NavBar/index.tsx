@@ -23,7 +23,23 @@ const NavBar = () => {
           to="/customers"
           children={
             <li className="navbar__list-item">
-              <div className="navbar__list-item-link">Customers</div>
+              <div className="navbar__list-item-link">List</div>
+            </li>
+          }
+        ></NavLink>
+        <NavLink
+          to="/add-customer"
+          children={
+            <li className="navbar__list-item">
+              <div className="navbar__list-item-link">Add</div>
+            </li>
+          }
+        ></NavLink>
+        <NavLink
+          to="/update-or-delete"
+          children={
+            <li className="navbar__list-item">
+              <div className="navbar__list-item-link">Update</div>
             </li>
           }
         ></NavLink>
