@@ -1,28 +1,29 @@
 import React from 'react';
 import {
-    BrowserRouter ,
-    Routes,
-    Route,
+  Routes,
+  Route,
 } from 'react-router-dom';
-import Navbar from './components/NavBar';
-
 import './App.scss';
+import CustomersTable from './components/CustomersTable';
+import Navbar from './components/NavBar';
+import Home from './components/Home';
+import FormPost from './components/FormPost';
+import Form from './components/Form';
 
-const App = () => {
-    return (
-        <BrowserRouter>
-        <div className="App">
-        <Navbar/>
-        <Routes>
-            <Route path="/" element={<h3>Home</h3>}  />
-            <Route path="/customers" element={<h3>Customers Table</h3>} />
-            <Route path="/add-customer" element={<h3>Post</h3>} />
-            <Route path="/update-or-delete" element={<h3>Put/Delete</h3>} />
-            {/* <Route path="/customers/:id" element={<<h3>GetByID</h3>} /> */}
-        </Routes>
-        </div>
-    </BrowserRouter>
-    );
+function App() {
+  return (
+    <div className="App">
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home />}  />
+        <Route path="/customers" element={<CustomersTable />} />
+        <Route path="/add-customer" element={<FormPost />} />
+        <Route path="/update-or-delete" element={<Form />} />
+        <Route path="*" element={<h1>Not found</h1>} />
+        {/* <Route path="/users/:id" element={<UserDetail eventHandler={handleBack}/>} /> */}
+      </Routes>
+    </div>
+  );
 }
 
 export default App;
