@@ -1,41 +1,41 @@
 .input {
-    position: relative;
+  position: relative;
+  width: 100%;
+
+  &-container {
+    height: 56px;
     width: 100%;
-    
-    &-container {
-        height: 56px;
-        width: 100%;
-        padding: 15px;
-        border: 2px solid #ed6c02;
-        border-radius: 4px;
-        outline: none;
-        font-size: 10px;
-        transition: 0.5s;
-    }
+    padding: 15px;
+    border: 2px solid #ed6c02;
+    border-radius: 4px;
+    outline: none;
+    font-size: 10px;
+    transition: 0.5s;
+  }
 
-    &-label {
-        position: absolute;
-        left: 0;
-        padding: 10px;
-        pointer-events: none;
-        font-size: 10px;
-        color: #ed6c02;
-        transition: 0.5s;
-    }
+  &-label {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 10px;
+    color: #ed6c02;
+    transition: 0.5s;
+  }
 
-    &-container:valid ~ span,
-    &-container:focus ~ span {
-        color: #ed6c02;
-        transform: translateX(10px) translateY(-5px);
-        font-size: 8px;
-        padding: 0 3px;
-        background: #fff;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-    }
+  &-container:valid ~ span,
+  &-container:focus ~ span {
+    color: #ed6c02;
+    transform: translateX(10px) translateY(-5px);
+    font-size: 8px;
+    padding: 0 3px;
+    background: #fff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
 
-    &-container:valid,
-    &-container:focus {
-        box-shadow: 1px 1px 4px 1px #ed6c02;
-    }
+  &-container:valid,
+  &-container:focus {
+    box-shadow: 1px 1px 4px 1px #ed6c02;
+  }
 }

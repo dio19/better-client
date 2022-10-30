@@ -1,14 +1,11 @@
-import React from 'react';
-import { useEffect } from "react"
-import {
-  NavLink
-} from 'react-router-dom';
-import "./index.scss"
+import React from "react";
+import { useEffect } from "react";
+import { NavLink } from "react-router-dom";
+import "./index.scss";
 
 const Home = () => {
-
   useEffect(() => {
-    const script = document.createElement("script")
+    const script = document.createElement("script");
     script.innerHTML = `
     var swiper = new Swiper(".method-slider", {
       spaceBetween: 30,
@@ -22,13 +19,13 @@ const Home = () => {
         el: ".method-slider__pagination",
         clickable: true,
       },
-    })`
-    document.body.appendChild(script)
-  }, [])
+    })`;
+    document.body.appendChild(script);
+  }, []);
 
   return (
     <div className="container">
-            <div className="method-slider">
+      <div className="method-slider">
         <div className="method-slider__wrp swiper-wrapper">
           <div className="method-slider__item swiper-slide">
             <div className="method-slider__img">
@@ -45,8 +42,10 @@ const Home = () => {
                 Recusandae voluptate repellendus magni illo ea animi?{" "}
               </div>
               <NavLink
-                  to="/add-customer"
-                  children={<div className="method-slider__button">GO TO THE FORM</div>}
+                to="/add-customer"
+                children={
+                  <div className="method-slider__button">GO TO THE FORM</div>
+                }
               ></NavLink>
             </div>
           </div>
@@ -59,14 +58,18 @@ const Home = () => {
             </div>
             <div className="method-slider__content">
               <span className="method-slider__method">PUT/POST</span>
-              <div className="method-slider__title">Update or delete Customer</div>
+              <div className="method-slider__title">
+                Update or delete Customer
+              </div>
               <div className="method-slider__text">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Recusandae voluptate repellendus magni illo ea animi?
               </div>
               <NavLink
-                  to="/update-or-delete"
-                  children={<div className="method-slider__button">GO TO THE FORM</div>}
+                to="/update-or-delete"
+                children={
+                  <div className="method-slider__button">GO TO THE FORM</div>
+                }
               ></NavLink>
             </div>
           </div>
@@ -86,8 +89,10 @@ const Home = () => {
                 Recusandae voluptate repellendus magni illo ea animi?
               </div>
               <NavLink
-                  to="/customers"
-                  children={<div className="method-slider__button">GO TO THE TABLE</div>}
+                to="/customers"
+                children={
+                  <div className="method-slider__button">GO TO THE TABLE</div>
+                }
               ></NavLink>
             </div>
           </div>
@@ -95,8 +100,7 @@ const Home = () => {
         <div className="method-slider__pagination"></div>
       </div>
     </div>
-
-  )
-}
+  );
+};
 
 export default Home;

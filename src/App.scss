@@ -1,14 +1,13 @@
-
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
 
 .App {
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      background-color: #FFE53B;
-      background-image: linear-gradient(147deg, #FFE53B 0%, #fd3838 74%);
-      min-height: 100vh;
-      font-family: 'Fira Sans', sans-serif;
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  background-color: #ffe53b;
+  background-image: linear-gradient(147deg, #ffe53b 0%, #fd3838 74%);
+  min-height: 100vh;
+  font-family: "Fira Sans", sans-serif;
 }
