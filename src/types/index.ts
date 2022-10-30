@@ -34,6 +34,17 @@ interface MouseEventButton extends React.MouseEvent<HTMLButtonElement> {
   target: MouseEventTarget;
 }
 
+interface ITextfield {
+  id: string;
+  label: string;
+  value: string;
+  onChange: (
+    e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>
+  ) => void;
+  error: boolean;
+  helperText: string;
+}
+
 export type {
   IInput,
   Order,
@@ -41,4 +52,5 @@ export type {
   DataCustomer,
   HeadCell,
   MouseEventButton,
+  ITextfield,
 };
