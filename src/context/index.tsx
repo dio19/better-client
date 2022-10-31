@@ -920,7 +920,7 @@ export const CustomerProvider = ({ children }: Props) => {
 
   const deleteCustomerById = (id: number) => {
     const copyDataContext = [...DataContext];
-    let indexCustomerToDelete = null;
+    let indexCustomerToDelete = -1;
 
     copyDataContext.forEach((customer, index) => {
       if (customer.id === id) {
@@ -937,7 +937,7 @@ export const CustomerProvider = ({ children }: Props) => {
 
   const updateCustomerById = (id: number, customer: InputValues) => {
     const copyDataContext = [...DataContext];
-    let indexCustomerToUpdate = null;
+    let indexCustomerToUpdate = -1;
 
     copyDataContext.forEach((customer, index) => {
       if (customer.id === id) {

@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Custom Textfield Component It should render Custom Textfield Component correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorWarning Mui-disabled Mui-error MuiFormLabel-filled Mui-required MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-qvxuup-MuiFormLabel-root-MuiInputLabel-root"
+      data-shrink="true"
+      for="0"
+      id="0-label"
+    >
+      Test
+      <span
+        aria-hidden="true"
+        class="MuiFormLabel-asterisk MuiInputLabel-asterisk Mui-error css-wgai2y-MuiFormLabel-asterisk"
+      >
+         *
+      </span>
+    </label>
+    <div
+      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorWarning Mui-disabled Mui-error MuiInputBase-formControl css-11qfo8z-MuiInputBase-root-MuiOutlinedInput-root"
+    >
+      <input
+        aria-describedby="0-helper-text"
+        aria-invalid="true"
+        class="MuiInputBase-input MuiOutlinedInput-input Mui-disabled css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+        disabled=""
+        id="0"
+        required=""
+        type="text"
+        value="Test"
+      />
+      <fieldset
+        aria-hidden="true"
+        class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          class="css-14lo706"
+        >
+          <span>
+            Test *
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+    <p
+      class="MuiFormHelperText-root Mui-disabled Mui-error MuiFormHelperText-sizeMedium MuiFormHelperText-contained MuiFormHelperText-filled Mui-required css-1wc848c-MuiFormHelperText-root"
+      id="0-helper-text"
+    >
+      Test
+    </p>
+  </div>
+</DocumentFragment>
+`;

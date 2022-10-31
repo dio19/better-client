@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar Component It should render NavBar Component correctly 1`] = `
+<DocumentFragment>
+  <nav
+    class="navbar"
+  >
+    <a
+      aria-current="page"
+      class="navbar__title active"
+      href="/"
+    >
+      <h1>
+        Customers App
+      </h1>
+    </a>
+    <ul
+      class="navbar__list"
+    >
+      <a
+        aria-current="page"
+        class="active"
+        href="/"
+      >
+        <li
+          class="navbar__list-item"
+        >
+          <div
+            class="navbar__list-item-link"
+          >
+            Home
+          </div>
+        </li>
+      </a>
+      <a
+        class=""
+        href="/customers"
+      >
+        <li
+          class="navbar__list-item"
+        >
+          <div
+            class="navbar__list-item-link"
+          >
+            List
+          </div>
+        </li>
+      </a>
+      <a
+        class=""
+        href="/add-customer"
+      >
+        <li
+          class="navbar__list-item"
+        >
+          <div
+            class="navbar__list-item-link"
+          >
+            Add
+          </div>
+        </li>
+      </a>
+      <a
+        class=""
+        href="/update-or-delete"
+      >
+        <li
+          class="navbar__list-item"
+        >
+          <div
+            class="navbar__list-item-link"
+          >
+            Update
+          </div>
+        </li>
+      </a>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
