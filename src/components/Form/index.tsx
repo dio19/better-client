@@ -26,15 +26,8 @@ const Form = () => {
     country: "",
   };
 
-  const FORM_VALIDATION = Yup.object().shape({
-    first: Yup.string().required("Required"),
-    last: Yup.string().required("Required"),
-    email: Yup.string().email("Invalid email.").required("Required"),
-    company: Yup.string().required("Required"),
-    country: Yup.string(),
-  });
-
-  const { DataContext } = React.useContext(CustomerContext);
+  const { DataContext, deleteCustomerById, updateCustomerById } =
+    React.useContext(CustomerContext);
   const [ID, setID] = React.useState(0);
   const [checked, setChecked] = React.useState(false);
   const [customerById, setCustomerById] = React.useState<
@@ -43,6 +36,19 @@ const Form = () => {
   const [idNotFound, setIdNotFound] = React.useState(false);
   const [method, setMethod] = React.useState(false);
   const [valueDate, setValueDate] = React.useState<Dayjs | null>(dayjs());
+
+  const required = Yup.string().required("Required");
+  const notRequired = Yup.string().notRequired();
+
+  const FORM_VALIDATION = Yup.object().shape({
+    first: method ? notRequired : required,
+    last: method ? notRequired : required,
+    email: method
+      ? Yup.string().email("Invalid email.").notRequired()
+      : Yup.string().email("Invalid email.").required("Required"),
+    company: method ? notRequired : required,
+    country: method ? notRequired : required,
+  });
 
   const handleChangeMethod = (event: React.ChangeEvent<HTMLInputElement>) => {
     setMethod(event.target.checked);
@@ -66,6 +72,7 @@ const Form = () => {
       if (customer !== undefined) {
         setCustomerById({ ...customer });
         setChecked(true);
+        setValueDate(dayjs(customer.created_at));
       } else {
         setIdNotFound(true);
         setChecked(false);
@@ -108,7 +115,12 @@ const Form = () => {
         }}
         validationSchema={FORM_VALIDATION}
         onSubmit={(values) => {
-          console.log({ ...values, created_at: dayjs(valueDate).toString() });
+          method
+            ? deleteCustomerById(ID)
+            : updateCustomerById(ID, {
+                ...values,
+                created_at: dayjs(valueDate).toString(),
+              });
         }}
       >
         {({ values, errors, touched, handleChange, handleSubmit }) => (

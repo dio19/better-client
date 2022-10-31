@@ -918,11 +918,71 @@ export const CustomerProvider = ({ children }: Props) => {
     ...customers,
   ]);
 
+  const deleteCustomerById = (id: number) => {
+    const copyDataContext = [...DataContext];
+    let indexCustomerToDelete = null;
+
+    copyDataContext.forEach((customer, index) => {
+      if (customer.id === id) {
+        indexCustomerToDelete = index;
+      }
+    });
+
+    if (indexCustomerToDelete !== null) {
+      copyDataContext.splice(indexCustomerToDelete, 1);
+      setDataContext(copyDataContext);
+      console.log(`Customer with ID ${id} was deleted successfully`);
+    }
+  };
+
+  const updateCustomerById = (id: number, customer: DataCustomer) => {
+    const copyDataContext = [...DataContext];
+    let indexCustomerToUpdate = null;
+
+    copyDataContext.forEach((customer, index) => {
+      if (customer.id === id) {
+        indexCustomerToUpdate = index;
+      }
+    });
+
+    if (indexCustomerToUpdate !== null) {
+      const customerUpdated = { ...customer, id };
+      copyDataContext.splice(indexCustomerToUpdate, 1);
+      setDataContext(copyDataContext);
+      setDataContext((oldArray) => [...oldArray, customerUpdated]);
+      console.log(
+        `Customer with ID ${id} was update with this data: `,
+        customerUpdated
+      );
+    }
+  };
+
+  const newCustomer = (customer: DataCustomer) => {
+    let maxId = 0;
+
+    DataContext.forEach((customer) => {
+      if (customer.id > maxId) {
+        maxId = customer.id;
+      }
+    });
+
+    const dataNewCustomer = { ...customer, id: maxId + 1 };
+
+    setDataContext((oldArray) => [...oldArray, dataNewCustomer]);
+    console.log(
+      `New Customer with ID ${maxId + 1} was added with this data: `,
+      dataNewCustomer
+    );
+  };
+
   return (
     <CustomerContext.Provider
       value={{
         DataContext,
         setDataContext,
+        deleteCustomerById,
+        updateCustomerById,
+        newCustomer,
       }}
     >
       {children}

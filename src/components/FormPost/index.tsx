@@ -9,6 +9,8 @@ import dayjs, { Dayjs } from "dayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { DateTimePicker } from "@mui/x-date-pickers/DateTimePicker";
+
+import { CustomerContext } from "../../context";
 import CustomTextField from "../CustomTextField";
 
 import "./index.scss";
@@ -31,6 +33,7 @@ const FormPost = () => {
   });
 
   const [valueDate, setValueDate] = React.useState<Dayjs | null>(dayjs());
+  const { newCustomer } = React.useContext(CustomerContext);
 
   const handleChangeDate = (newValue: Dayjs | null) => {
     setValueDate(newValue);
@@ -45,7 +48,7 @@ const FormPost = () => {
           }}
           validationSchema={FORM_VALIDATION}
           onSubmit={(values) => {
-            console.log({ ...values, created_at: dayjs(valueDate).toString() });
+            newCustomer({ ...values, created_at: dayjs(valueDate).toString() });
           }}
         >
           {({ values, errors, touched, handleChange, handleSubmit }) => (

@@ -1,8 +1,3 @@
-interface IInput {
-  label: string;
-  type: string;
-}
-
 type Order = "asc" | "desc";
 
 interface DataCustomer {
@@ -37,27 +32,29 @@ interface ITextfield {
   disabled?: boolean;
 }
 
+type InputValues = {
+  email: string;
+  first: string;
+  last: string;
+  company: string;
+  country: string;
+  created_at: string;
+};
+
 type CustomerContextType = {
   DataContext: Array<DataCustomer>;
   setDataContext: (value: Array<DataCustomer>) => void;
+  deleteCustomerById: (id: number) => void;
+  updateCustomerById: (id: number, customer: InputValues) => void;
+  newCustomer: (customer: InputValues) => void;
 };
 
-interface MouseEventTarget extends EventTarget {
-  value: any;
-  id: string;
-}
-
-interface MouseEvent extends React.ChangeEventHandler<HTMLInputElement> {
-  target: MouseEventTarget;
-}
-
 export type {
-  IInput,
   Order,
   Customers,
   DataCustomer,
   HeadCell,
   ITextfield,
   CustomerContextType,
-  MouseEvent,
+  InputValues,
 };
