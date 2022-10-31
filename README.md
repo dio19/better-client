@@ -18,6 +18,7 @@
   <img alt="MaterialUI" src="https://img.shields.io/badge/Material--UI-blue?style=flat-square&logo=Material--UI&logoColor=white" />
   <img alt="Webpack" src="https://img.shields.io/badge/-Webpack-F05032?style=flat-square&logo=Webpack&logoColor=white" />
   <img alt="Jest" src="https://img.shields.io/badge/-Jest-C21325?style=flat-square&logo=jest&logoColor=white" />
+  <img alt="Babel" src="https://img.shields.io/badge/-Babel-C21325?style=flat-square&logo=Babel&logoColor=white" />
 </p>
 
 React | Typescript | Material UI | React Router 6 | Sass | Jest | React testing library | Webpack | Babel | Eslint | Formik | YUP | dayjs
@@ -27,13 +28,13 @@ React | Typescript | Material UI | React Router 6 | Sass | Jest | React testing 
 
 [Home](#home)
 
+[Tabla](#tabla)
+
 [Post](#post)
 
 [Put](#put)
 
 [Delete](#delete)
-
-[Comentarios Generales](#comentarios-generales)
 
 
 ## Como Correr el proyecto
@@ -82,7 +83,4 @@ Para actualizar la informacion de un cliente ya existente se utiliza un formular
 ### Delete
 
 Para eliminar un cliente, se utiliza el mismo formulario de que se encuentra en la ruta del put, pero se activa el metodo DELETE, clickeando el switch que indica que se encuentra en el meteodo PUT
-
-### Comentarios Generales
-
 
