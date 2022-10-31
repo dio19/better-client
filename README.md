@@ -36,7 +36,7 @@ React | Typescript | Material UI | React Router 6 | Sass | Jest | React testing 
 
 [Delete](#delete)
 
-[Comentarios generales](#comentarios)
+[Comentarios generales](#comentarios-generales)
 
 
 ## Como Correr el proyecto
