@@ -16,7 +16,7 @@
   <img alt="Typescript" src="https://img.shields.io/badge/-Typescript-339933?style=flat-square&logo=Typescript&logoColor=white" />
   <img alt="Sass" src="https://img.shields.io/badge/-Sass-CC6699?style=flat-square&logo=sass&logoColor=white" />
   <img alt="MaterialUI" src="https://img.shields.io/badge/Material--UI-blue?style=flat-square&logo=Material--UI&logoColor=white" />
-  <img alt="Git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />
+  <img alt="Webpack" src="https://img.shields.io/badge/-Webpack-F05032?style=flat-square&logo=Webpack&logoColor=white" />
   <img alt="Jest" src="https://img.shields.io/badge/-Jest-C21325?style=flat-square&logo=jest&logoColor=white" />
 </p>
 
