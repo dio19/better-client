@@ -35,6 +35,8 @@ React | Typescript | Material UI | React Router 6 | Sass | Jest | React testing 
 
 [Delete](#delete)
 
+[Comentarios generales](#comentarios)
+
 
 ## Como Correr el proyecto
 
@@ -83,5 +85,8 @@ Para actualizar la informacion de un cliente ya existente se utiliza un formular
 ### Delete
 ![Delete](https://user-images.githubusercontent.com/55143009/199048404-d6377b72-5b46-4992-a301-b92ed19aae35.gif)
 
-Para eliminar un cliente, se utiliza el mismo formulario de que se encuentra en la ruta del put, pero se activa el metodo DELETE, clickeando el switch que indica que se encuentra en el meteodo PUT
+Para eliminar un cliente, se utiliza el mismo formulario de que se encuentra en la ruta del put, pero se activa el metodo DELETE, clickeando el switch que indica que se encuentra en el metodo PUT
+
+##Comentarios Generales
+Para verificar la implementacion de cada metodo se dejo un console.log en el codigo, y otro lugar donde se puede verificar el impacto de los cambios es en la tabla, donde podes ordenar los registros por id.
 
