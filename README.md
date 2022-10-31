@@ -67,6 +67,7 @@ npm run build
 En la pagina principal se desarrollo un componente tipo carousel o swipper, que contiene una breve descripcion de los tres metodos del crud y una tabla con todos los clientes. Un boton que te redirige a la ruta donde se renderiza el componente que implemente dicho metodo.
 
 ## Tabla
+![Tabla](https://user-images.githubusercontent.com/55143009/199048375-47f8e973-edd5-4140-8021-29da56e24d09.gif)
 
 En la ruta /customers se implemente una tabla donde se puede acceder al listado completo de clientes, con paginado y sort en algunos campos.
 
@@ -81,6 +82,7 @@ En esta pagina se implemento un formulario con los datos del nuevo cliente a ing
 Para actualizar la informacion de un cliente ya existente se utiliza un formulario donde se desarrollo un id checker. Con ese chequeo se verifica la existencia del cliente proporcionandole el id del mismo. Si el id no se encuentra entonces arroja un error. Si el id existe devuelve la informacion cargada debajo de cada una de los input, y habilita los mismos para poder actualizar la informacion del cliente.
 
 ### Delete
+![Delete](https://user-images.githubusercontent.com/55143009/199048404-d6377b72-5b46-4992-a301-b92ed19aae35.gif)
 
 Para eliminar un cliente, se utiliza el mismo formulario de que se encuentra en la ruta del put, pero se activa el metodo DELETE, clickeando el switch que indica que se encuentra en el meteodo PUT
 
