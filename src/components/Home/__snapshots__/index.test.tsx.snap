@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BuyLevel6 - Benefits Group Section Mobile It should render Benefits image component correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <div
+      class="method-slider"
+    >
+      <div
+        class="method-slider__wrp swiper-wrapper"
+      >
+        <div
+          class="method-slider__item swiper-slide"
+        >
+          <div
+            class="method-slider__img"
+          >
+            <img
+              alt=""
+              src="https://blog.hubspot.com/hubfs/customer-iinteraction.jpg"
+            />
+          </div>
+          <div
+            class="method-slider__content"
+          >
+            <span
+              class="method-slider__method"
+            >
+              POST
+            </span>
+            <div
+              class="method-slider__title"
+            >
+              Add Customer
+            </div>
+            <div
+              class="method-slider__text"
+            >
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? 
+            </div>
+            <a
+              class=""
+              href="/add-customer"
+            >
+              <div
+                class="method-slider__button"
+              >
+                GO TO THE FORM
+              </div>
+            </a>
+          </div>
+        </div>
+        <div
+          class="method-slider__item swiper-slide"
+        >
+          <div
+            class="method-slider__img"
+          >
+            <img
+              alt=""
+              src="https://blog.hubspot.com/hubfs/Align-Sales-Customer-Service.jpg"
+            />
+          </div>
+          <div
+            class="method-slider__content"
+          >
+            <span
+              class="method-slider__method"
+            >
+              PUT/POST
+            </span>
+            <div
+              class="method-slider__title"
+            >
+              Update or delete Customer
+            </div>
+            <div
+              class="method-slider__text"
+            >
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?
+            </div>
+            <a
+              class=""
+              href="/update-or-delete"
+            >
+              <div
+                class="method-slider__button"
+              >
+                GO TO THE FORM
+              </div>
+            </a>
+          </div>
+        </div>
+        <div
+          class="method-slider__item swiper-slide"
+        >
+          <div
+            class="method-slider__img"
+          >
+            <img
+              alt=""
+              src="https://www.hubspot.com/hubfs/customer%20acquisition%20specialist_featured%20image.jpg"
+            />
+          </div>
+          <div
+            class="method-slider__content"
+          >
+            <span
+              class="method-slider__method"
+            >
+              TABLE
+            </span>
+            <div
+              class="method-slider__title"
+            >
+              All Customers
+            </div>
+            <div
+              class="method-slider__text"
+            >
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?
+            </div>
+            <a
+              class=""
+              href="/customers"
+            >
+              <div
+                class="method-slider__button"
+              >
+                GO TO THE TABLE
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="method-slider__pagination"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
