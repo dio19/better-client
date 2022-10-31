@@ -3,14 +3,13 @@
 * React App desarrollada con Typescript
 * Componentes de Material UI y Swipper
 * Formularios con Formik y validaciones con YUP
-* State Managment de la data mock con Context API
+* State Managment de la data mock (con los primeros 100 registros del JSON) desarrolada con React Context API
 * Rutas de la App con React Router V6.
 * Configuracion customizada con Webpack y babel para la puesta a punto del ambiente de desarrollo y produccion.
 * Test con Jest y React Testing Library
 * Preprocesador de estilos con Sass y node-sass.
 * Manejo de fechas con la libreria dayjs y Date Pickers de MUI.
 * Eslint/Prettier para analisis y formateo de codigo.
-* Mock data con los primeros 100 registros del JSON proporcionado manejada con state managment React Context API.
 
 <p>
   <img alt="React" src="https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=React&logoColor=black" />
