@@ -15,10 +15,9 @@
   <img alt="React" src="https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=React&logoColor=black" />
   <img alt="Typescript" src="https://img.shields.io/badge/-Typescript-339933?style=flat-square&logo=Typescript&logoColor=white" />
   <img alt="Sass" src="https://img.shields.io/badge/-Sass-CC6699?style=flat-square&logo=sass&logoColor=white" />
-  <img alt="MaterialUI" src="https://img.shields.io/badge/Material--UI-blue?style=flat-square&logo=Material--UI&logoColor=white" />
   <img alt="Webpack" src="https://img.shields.io/badge/-Webpack-F05032?style=flat-square&logo=Webpack&logoColor=white" />
   <img alt="Jest" src="https://img.shields.io/badge/-Jest-C21325?style=flat-square&logo=jest&logoColor=white" />
-  <img alt="Babel" src="https://img.shields.io/badge/-Babel-C21325?style=flat-square&logo=Babel&logoColor=white" />
+  <img alt="Babel" src="https://img.shields.io/badge/-Babel-FFFF33?style=flat-square&logo=Babel&logoColor=white" />
 </p>
 
 React | Typescript | Material UI | React Router 6 | Sass | Jest | React testing library | Webpack | Babel | Eslint | Formik | YUP | dayjs
