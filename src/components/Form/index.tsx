@@ -136,11 +136,13 @@ const Form = () => {
                   value={values.first}
                   label="Firstname"
                   onChange={handleChange}
-                  error={touched.first && Boolean(errors.first)}
+                  error={touched.first && Boolean(errors.first) ? true : false}
                   helperText={
                     customerById !== undefined
                       ? customerById.first
                       : touched.first && errors.first
+                      ? errors.first
+                      : ""
                   }
                   disabled={!checked || method}
                 />
@@ -151,11 +153,13 @@ const Form = () => {
                   value={values.last}
                   label="Lastname"
                   onChange={handleChange}
-                  error={touched.last && Boolean(errors.last)}
+                  error={touched.last && Boolean(errors.last) ? true : false}
                   helperText={
                     customerById !== undefined
                       ? customerById.last
                       : touched.last && errors.last
+                      ? errors.last
+                      : ""
                   }
                   disabled={!checked || method}
                 />
@@ -166,11 +170,13 @@ const Form = () => {
                   value={values.email}
                   label="Email"
                   onChange={handleChange}
-                  error={touched.email && Boolean(errors.email)}
+                  error={touched.email && Boolean(errors.email) ? true : false}
                   helperText={
                     customerById !== undefined && !errors.email
                       ? customerById.email
                       : touched.email && errors.email
+                      ? errors.email
+                      : ""
                   }
                   disabled={!checked || method}
                 />
@@ -181,11 +187,15 @@ const Form = () => {
                   value={values.company}
                   label="Company"
                   onChange={handleChange}
-                  error={touched.company && Boolean(errors.company)}
+                  error={
+                    touched.company && Boolean(errors.company) ? true : false
+                  }
                   helperText={
                     customerById !== undefined
                       ? customerById.company
                       : touched.company && errors.company
+                      ? errors.company
+                      : ""
                   }
                   disabled={!checked || method}
                 />
@@ -196,11 +206,15 @@ const Form = () => {
                   value={values.country}
                   label="Country"
                   onChange={handleChange}
-                  error={touched.country && Boolean(errors.country)}
+                  error={
+                    touched.country && Boolean(errors.country) ? true : false
+                  }
                   helperText={
                     customerById !== undefined
                       ? customerById.country
                       : touched.country && errors.country
+                      ? errors.country
+                      : ""
                   }
                   disabled={!checked || method}
                 />

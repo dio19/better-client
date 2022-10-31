@@ -1,6 +1,6 @@
 import React from "react";
 import { createContext, ReactNode, useState } from "react";
-import { DataCustomer, CustomerContextType } from "../types";
+import { DataCustomer, CustomerContextType, InputValues } from "../types";
 
 export const CustomerContext = createContext<CustomerContextType>(
   {} as CustomerContextType
@@ -935,7 +935,7 @@ export const CustomerProvider = ({ children }: Props) => {
     }
   };
 
-  const updateCustomerById = (id: number, customer: DataCustomer) => {
+  const updateCustomerById = (id: number, customer: InputValues) => {
     const copyDataContext = [...DataContext];
     let indexCustomerToUpdate = null;
 
@@ -957,7 +957,7 @@ export const CustomerProvider = ({ children }: Props) => {
     }
   };
 
-  const newCustomer = (customer: DataCustomer) => {
+  const newCustomer = (customer: InputValues) => {
     let maxId = 0;
 
     DataContext.forEach((customer) => {

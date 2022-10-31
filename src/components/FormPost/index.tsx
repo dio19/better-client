@@ -64,8 +64,12 @@ const FormPost = () => {
                     value={values.first}
                     label="Firstname"
                     onChange={handleChange}
-                    error={touched.first && Boolean(errors.first)}
-                    helperText={touched.first && errors.first}
+                    error={
+                      touched.first && Boolean(errors.first) ? true : false
+                    }
+                    helperText={
+                      touched.first && errors.first ? errors.first : ""
+                    }
                   />
                 </Grid>
                 <Grid item md={6}>
@@ -74,8 +78,8 @@ const FormPost = () => {
                     value={values.last}
                     label="Lastname"
                     onChange={handleChange}
-                    error={touched.last && Boolean(errors.last)}
-                    helperText={touched.last && errors.last}
+                    error={touched.last && Boolean(errors.last) ? true : false}
+                    helperText={touched.last && errors.last ? errors.last : ""}
                   />
                 </Grid>
                 <Grid item md={6}>
@@ -84,8 +88,12 @@ const FormPost = () => {
                     value={values.email}
                     label="Email"
                     onChange={handleChange}
-                    error={touched.email && Boolean(errors.email)}
-                    helperText={touched.email && errors.email}
+                    error={
+                      touched.email && Boolean(errors.email) ? true : false
+                    }
+                    helperText={
+                      touched.email && errors.email ? errors.email : ""
+                    }
                   />
                 </Grid>
                 <Grid item md={6}>
@@ -94,8 +102,12 @@ const FormPost = () => {
                     value={values.company}
                     label="Company"
                     onChange={handleChange}
-                    error={touched.company && Boolean(errors.company)}
-                    helperText={touched.company && errors.company}
+                    error={
+                      touched.company && Boolean(errors.company) ? true : false
+                    }
+                    helperText={
+                      touched.company && errors.company ? errors.company : ""
+                    }
                   />
                 </Grid>
                 <Grid item md={6}>
@@ -104,8 +116,12 @@ const FormPost = () => {
                     value={values.country}
                     label="Country"
                     onChange={handleChange}
-                    error={touched.country && Boolean(errors.country)}
-                    helperText={touched.country && errors.country}
+                    error={
+                      touched.country && Boolean(errors.country) ? true : false
+                    }
+                    helperText={
+                      touched.country && errors.country ? errors.country : ""
+                    }
                   />
                 </Grid>
                 <Grid item md={6}>
