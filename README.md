@@ -10,6 +10,7 @@
 * Preprocesador de estilos con Sass y node-sass.
 * Manejo de fechas con la libreria dayjs y Date Pickers de MUI.
 * Eslint/Prettier para analisis y formateo de codigo.
+* Mock data con los primeros 100 registros del JSON proporcionado manejada con state managment React Context API.
 
 <p>
   <img alt="React" src="https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=React&logoColor=black" />
@@ -87,6 +88,6 @@ Para actualizar la informacion de un cliente ya existente se utiliza un formular
 
 Para eliminar un cliente, se utiliza el mismo formulario de que se encuentra en la ruta del put, pero se activa el metodo DELETE, clickeando el switch que indica que se encuentra en el metodo PUT
 
-##Comentarios Generales
+### Comentarios Generales
 Para verificar la implementacion de cada metodo se dejo un console.log en el codigo, y otro lugar donde se puede verificar el impacto de los cambios es en la tabla, donde podes ordenar los registros por id.
 
